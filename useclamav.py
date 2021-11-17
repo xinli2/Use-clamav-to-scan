@@ -9,7 +9,7 @@ class Useclamav:
 
 
 
-scanFile="/home/user/forBrian/biohazard"
-virusFile = "/home/user/VIRUS"
+scanFile="/home/user/forBrian/biohazard" #The address you want to scan
+virusFile = "/home/user/VIRUS"           #The address you want to put the virus
 UC = Useclamav(scanFile, virusFile)
 UC.scan()

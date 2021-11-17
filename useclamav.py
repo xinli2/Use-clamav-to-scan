@@ -4,7 +4,7 @@ class Useclamav:
           self.scanFile = scanFile
           self.virusFile = virusFile
      def scan(self):
-          a=os.popen("cd VIRUS && clamscan -i -r --move="+self.virusFile+" "+self.scanFile)
+          a=os.popen("clamscan -i -r --move="+self.virusFile+" "+self.scanFile)
           print(a.read())
 
 
